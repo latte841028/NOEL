@@ -185,8 +185,6 @@
       flex-basis: 100%;
     }
 
-    /* Filters */
-
     .filters {
       display: flex;
       flex-wrap: wrap;
@@ -244,8 +242,6 @@
     .filter-btn:hover {
       border-color: var(--accent);
     }
-
-    /* Threads list */
 
     .threads {
       display: flex;
@@ -358,7 +354,8 @@
     }
 
     .thread-preview strong {
-      color: var(--text);
+      color: inherit;
+      font-weight: inherit;
     }
 
     details.thread-body {
@@ -442,11 +439,9 @@
     }
 
     .post-body em {
-      color: var(--accent-strong);
-      font-style: normal;
+      color: inherit;
+      font-style: inherit;
     }
-
-    /* N.O.E.L. internal */
 
     #noel-internal {
       margin-top: 28px;
@@ -484,8 +479,6 @@
       margin-bottom: 4px;
       color: #9ae6b4;
     }
-
-    /* Footer */
 
     footer {
       margin-top: 24px;
@@ -540,7 +533,6 @@
       </div>
     </header>
 
-    <!-- 訪客登入區：外觀看起來是一般進階登入 -->
     <section class="login-panel">
       <div class="login-panel-label">
         <span class="icon">🔐</span>
@@ -585,7 +577,8 @@
     </section>
 
     <main class="threads" id="threads-list">
-      <!-- SYS 1 -->
+
+      <!-- SYS 1 緊急召集通道 -->
       <article class="thread" data-tags="sys">
         <div class="thread-header">
           <div class="thread-title">
@@ -600,14 +593,12 @@
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              7則回覆
+              8則回覆
             </span>
           </div>
         </div>
         <div class="thread-preview">
-          【#SYS】有沒有人可以確認一下「地球調查員緊急召集通道」的狀態？文件寫的是<span
-            ><strong>老式 Emergency Channel</strong></span
-          >，不由 N.O.E.L. 管，可是……似乎也沒有任何人真的知道它現在是不是還活著。
+          有沒有人可以確認一下「地球調查員緊急召集通道」的狀態？文件寫的是老式 Emergency Channel，不由 N.O.E.L. 管，可是……似乎也沒有任何人真的知道它現在是不是還活著。
         </div>
 
         <details class="thread-body">
@@ -642,7 +633,7 @@
               </div>
               <div class="post-body">
 正常啦，別緊張。  
-那條線路本來就是<strong>獨立簽名憑證制</strong>，不會隨 N.O.E.L. 更新。
+那條線路本來就是獨立簽名憑證制，不會隨 N.O.E.L. 更新。
 
 說真的，應該至少十年沒被正式用過了。  
 要不是每次稽核都會跳出「保留中」的警告，我都忘了它在哪。
@@ -668,14 +659,12 @@
                 <span class="post-time">2025/01/05 09:10</span>
               </div>
               <div class="post-body">
-&gt; 應該還沒排到。
-
 這句話太真實了。  
 我們最近所有的人力都在修 N.O.E.L. 的更新排程，  
 連 API 稽核都被排到 Q3 才能做。
 
 Emergency Channel？  
-……祝它自己撐住。
+只好祝它自己撐住。
               </div>
             </div>
 
@@ -702,7 +691,7 @@ Emergency Channel？
 
 聽起來很安全，  
 但也代表——  
-<strong>我們其實不知道現在到底有幾把鑰匙還在外面。</strong>
+我們其實不知道現在到底有幾把鑰匙還在外面。
               </div>
             </div>
 
@@ -713,7 +702,7 @@ Emergency Channel？
               </div>
               <div class="post-body">
 翻了一下很久以前的設計文檔，  
-Emergency Channel 的撤銷流程是「<em>需由三方同時簽署</em>」那種超老派設計。
+Emergency Channel 的撤銷流程是「需由三方同時簽署」那種超老派設計。
 
 目前只有看到第一方簽署紀錄，  
 另外兩個欄位是空的。
@@ -723,11 +712,27 @@ Emergency Channel 的撤銷流程是「<em>需由三方同時簽署</em>」那�
 但絕對不是「不存在」。
               </div>
             </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">稽核組_亞倫</span>
+                <span class="post-time">2025/01/06 16:05</span>
+              </div>
+              <div class="post-body">
+這條通道會被列入下一輪系統稽核項目，  
+不過老實說，我們的清單已經排到年底了。  
+
+目前能做的，大概只有先把現有紀錄整理好，  
+至少確定「誰曾經有鑰匙」、「鑰匙理論上在哪」，  
+真要全面停用，勢必得開一場專門會議。  
+在那之前，它就繼續以「存在但不建議使用」的狀態待著。
+              </div>
+            </div>
           </div>
         </details>
       </article>
 
-      <!-- GOSSIP 1 -->
+      <!-- GOSSIP 1 降職與權限 -->
       <article class="thread" data-tags="gossip">
         <div class="thread-header">
           <div class="thread-title">
@@ -742,12 +747,12 @@ Emergency Channel 的撤銷流程是「<em>需由三方同時簽署</em>」那�
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              8則回覆
+              9則回覆
             </span>
           </div>
         </div>
         <div class="thread-preview">
-          【#GOSSIP】聽說有位<strong>曾經在高層任職的小精靈</strong>，去年底被調整職位，行政部說權限都收回了，技術部卻說系統裡還看到一些「不屬於現職」的可用功能……這到底是正常延遲，還是誰忘了關什麼？
+          聽說有位曾經在高層任職的小精靈，去年底被調整職位，行政部說權限都收回了，技術部卻說系統裡還看到一些「不屬於現職」的可用功能……這到底是正常延遲，還是誰忘了關什麼？
         </div>
 
         <details class="thread-body">
@@ -786,9 +791,9 @@ Emergency Channel 的撤銷流程是「<em>需由三方同時簽署</em>」那�
 行政程序的確都跑完了。  
 文件齊全、簽核也完成了。
 
-<strong>從行政角度來看，他確實沒有高階權限了。</strong>  
+從行政角度來看，他確實沒有高階權限了。  
 至於技術那邊的系統狀態……  
-呃，那要問技術部吧。
+那要問技術部吧。
               </div>
             </div>
 
@@ -805,11 +810,10 @@ N.O.E.L. 大更新排程塞滿全部資源。
 有些權限撤銷必須人工對應舊模組，  
 但我們一直沒有空處理到那一段。
 
-不過！  
-日常高權限應該是關掉了，  
+不過，日常高權限應該是關掉了，  
 那是新版模組處理的。
 
-至於那些<strong>古老功能</strong>……  
+至於那些古老功能……  
 我就不能保證了。
               </div>
             </div>
@@ -859,7 +863,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
               <div class="post-body">
 按照行政流程：不能用。  
 按照資料庫狀態：  
-呃……需要時間確認。
+需要時間確認。
               </div>
             </div>
 
@@ -873,16 +877,32 @@ N.O.E.L. 大更新排程塞滿全部資源。
 這種事情在聖誕節前後發生，真的很不妙欸。
 
 我只希望不要哪天突然發現，  
-「<em>以為不能用的某個功能</em>」其實還能用。  
+「以為不能用的某個功能」其實還能用。  
 
 光想就覺得毛毛的。
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">路人小精靈</span>
+                <span class="post-time">2025/02/10 18:20</span>
+              </div>
+              <div class="post-body">
+覺得最妙的是，  
+大家一邊說系統要更安全、更嚴謹，  
+一邊又對這種「說不清楚到底有沒有關掉」的東西睜一隻眼閉一隻眼。  
+
+也許哪天回頭看，  
+這些沒有處理乾淨的角落，  
+才是故事開始的地方。
               </div>
             </div>
           </div>
         </details>
       </article>
 
-      <!-- WORK 1 -->
+      <!-- WORK 1 願望怪怪的 -->
       <article class="thread" data-tags="work">
         <div class="thread-header">
           <div class="thread-title">
@@ -897,14 +917,12 @@ N.O.E.L. 大更新排程塞滿全部資源。
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              5則回覆
+              7則回覆
             </span>
           </div>
         </div>
         <div class="thread-preview">
-          「想再跟奶奶說一次晚安」→「超耐用暖燈」、「希望爸爸不要那麼累」→「自動家事工具組」……大家在工房看到的願望清單，是不是也覺得<span
-            ><strong>情緒型願望都被換成什麼耐用型東西</strong></span
-          >了？
+          「想再跟奶奶說一次晚安」→「超耐用暖燈」、「希望爸爸不要那麼累」→「自動家事工具組」……大家在工房看到的願望清單，是不是也覺得情緒型願望都被換成什麼耐用型東西了？
         </div>
 
         <details class="thread-body">
@@ -929,7 +947,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
 
 不是說不好啦，  
 只是……  
-<strong>好像哪裡變得很冷。</strong>
+好像哪裡變得很冷。
               </div>
             </div>
 
@@ -991,14 +1009,54 @@ N.O.E.L. 大更新排程塞滿全部資源。
 我們只是照著做。
 
 也許哪天，  
-<strong>有人會問：『那誰看了孩子的心？』</strong>
+有人會問：「那誰看了孩子的心？」
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">實習生_米可</span>
+                <span class="post-time">2025/12/01 09:15</span>
+              </div>
+              <div class="post-body">
+我才剛來不久，  
+第一週訓練的時候，前輩給我看了很久以前的紙本願望卡。  
+
+有些真的只是幾句話、幾個歪歪扭扭的字，  
+但那種笨拙的期待感……  
+跟現在螢幕上的整齊條列，感覺很不一樣。  
+
+不是說現在不好，  
+只是每次看到「已由系統最佳化」那一行時，  
+都會忍不住多看兩眼。
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">工房_班長</span>
+                <span class="post-time">2025/12/01 10:05</span>
+              </div>
+              <div class="post-body">
+站在班長的立場，  
+我必須承認「整理過的清單」真的比較好排程，  
+少了很多混亂和重工。  
+
+可是每年到了這個時候，  
+還是會想提醒大家：  
+就算清單是系統排出來的，  
+我們在最後一針、最後一張貼紙上，  
+還是可以留一點屬於自己的判斷。  
+
+不一定要反抗什麼，  
+只是不想全部變成同一個模子。
               </div>
             </div>
           </div>
         </details>
       </article>
 
-      <!-- INFO 1 -->
+      <!-- INFO 1 心情焦慮 -->
       <article class="thread" data-tags="info">
         <div class="thread-header">
           <div class="thread-title">
@@ -1013,7 +1071,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              5則回覆
+              6則回覆
             </span>
           </div>
         </div>
@@ -1051,7 +1109,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
               </div>
               <div class="post-body">
 我們這邊最大的差別是——  
-<strong>以前吵的是排程，現在吵的是「到底該不該照清單做」。</strong>
+以前吵的是排程，現在吵的是「到底該不該照清單做」。
 
 有時候看著那張清單，  
 心裡會冒出一句：  
@@ -1104,11 +1162,30 @@ N.O.E.L. 大更新排程塞滿全部資源。
 也不知道該回答哪一句。
               </div>
             </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">心理輔導窗口(暫代)</span>
+                <span class="post-time">2025/12/01 10:05</span>
+              </div>
+              <div class="post-body">
+只是想提醒大家：  
+覺得不安、覺得哪裡怪怪的，本身並不是錯。  
+
+有時候，系統看的是完成率，  
+我們感受到的是每天走進工房時的那一口氣。  
+
+如果真的覺得喘不過來，  
+不一定要寫正式報告，  
+也可以先在這裡說一說，  
+至少讓別人知道，你不是一個人在這樣想。
+              </div>
+            </div>
           </div>
         </details>
       </article>
 
-      <!-- SYS 2 BUG 板 -->
+      <!-- SYS 2 BUG 回報板 -->
       <article class="thread" data-tags="sys">
         <div class="thread-header">
           <div class="thread-title">
@@ -1123,13 +1200,12 @@ N.O.E.L. 大更新排程塞滿全部資源。
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              6則回覆
+              7則回覆
             </span>
           </div>
         </div>
         <div class="thread-preview">
-          【官方置頂】本串為 <strong>N.O.E.L. 使用回饋與異常回報</strong> 集中區。  
-          系統調整時會優先參考此板塊的意見與錯誤紀錄，作為後續效率化與規則調整依據。
+          【官方置頂】本串為 N.O.E.L. 使用回饋與異常回報集中區。系統調整時會優先參考此板塊的意見與錯誤紀錄，作為後續效率化與規則調整依據。
         </div>
 
         <details class="thread-body">
@@ -1219,7 +1295,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
 真的會被當成日後調整的依據——  
 
 那我只想寫一句：  
-「<em>請記得，我們處理的不是物件，是願望。</em>」
+「請記得，我們處理的不是物件，是願望。」
               </div>
             </div>
 
@@ -1230,7 +1306,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
               </div>
               <div class="post-body">
 補充說明：  
-本板為 <strong>N.O.E.L. 使用回饋與異常回報板</strong>，  
+本板為 N.O.E.L. 使用回饋與異常回報板，  
 後續版本的「效率化調整」會大量參考這裡的資料。
 
 請大家持續回報，  
@@ -1238,11 +1314,30 @@ N.O.E.L. 大更新排程塞滿全部資源。
 至少，試著不要忘記後者。
               </div>
             </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">技術部_新人</span>
+                <span class="post-time">2025/11/21 11:15</span>
+              </div>
+              <div class="post-body">
+第一次在這裡回報，  
+老實說一開始以為這只是「抱怨專區」。  
+
+進來看了幾輪之後才發現，  
+這些文字最後都會變成系統調整的「素材」。  
+
+有點緊張，  
+但也覺得，  
+如果哪一天流程真的變好了，  
+也許我們這些小小的留言，會是其中一部分原因。
+              </div>
+            </div>
           </div>
         </details>
       </article>
 
-      <!-- WORK 2 夜班 -->
+      <!-- WORK 2 夜班排程 -->
       <article class="thread" data-tags="work">
         <div class="thread-header">
           <div class="thread-title">
@@ -1257,7 +1352,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              4則回覆
+              5則回覆
             </span>
           </div>
         </div>
@@ -1330,11 +1425,30 @@ N.O.E.L. 大更新排程塞滿全部資源。
 謝謝。
               </div>
             </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">工房_資深夜班</span>
+                <span class="post-time">2025/11/28 11:10</span>
+              </div>
+              <div class="post-body">
+做夜班十年了，  
+以前最大的困擾是咖啡不夠、紙箱不夠。  
+
+這兩年換成排程通知、健康提醒、效率建議一堆，  
+有時候螢幕比現場還吵。  
+
+但不管怎樣，  
+最後包好那一箱禮物的，  
+還是坐在這裡打哈欠的我們。  
+想想也挺好笑的。
+              </div>
+            </div>
           </div>
         </details>
       </article>
 
-      <!-- GOSSIP 2 工房八卦 -->
+      <!-- GOSSIP 2 工房手工線謠言 -->
       <article class="thread" data-tags="gossip">
         <div class="thread-header">
           <div class="thread-title">
@@ -1349,7 +1463,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              4則回覆
+              5則回覆
             </span>
           </div>
         </div>
@@ -1426,11 +1540,32 @@ N.O.E.L. 大更新排程塞滿全部資源。
 只有我們自己才懂的小心思。
               </div>
             </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">工房_中層主管</span>
+                <span class="post-time">2025/10/02 19:10</span>
+              </div>
+              <div class="post-body">
+以主管角度補一句：  
+目前沒有看到真正「要裁掉誰」的正式方案，  
+比較像是在討論怎麼說服上面，  
+同時兼顧效率和傳統。  
+
+不過可以肯定的是，  
+未來「手工」這件事，  
+大概會被要求說得更清楚：  
+為什麼要做？做在哪裡？值不值得？  
+
+如果大家有想法，也可以整理起來，  
+至少在談的時候，我們手上不會完全空空的。
+              </div>
+            </div>
           </div>
         </details>
       </article>
 
-      <!-- SYS 3 通知 -->
+      <!-- SYS 3 通知太多 -->
       <article class="thread" data-tags="sys">
         <div class="thread-header">
           <div class="thread-title">
@@ -1445,12 +1580,12 @@ N.O.E.L. 大更新排程塞滿全部資源。
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              4則回覆
+              5則回覆
             </span>
           </div>
         </div>
         <div class="thread-preview">
-          最近登入系統後，會跳出「效率提升建議」、「流程提醒」、「填寫回饋」……有沒有人也覺得，有時候<span><strong>被提醒的時間比做事還久</strong></span>？
+          最近登入系統後，會跳出「效率提升建議」、「流程提醒」、「填寫回饋」……有沒有人也覺得，有時候被提醒的時間比做事還久？
         </div>
 
         <details class="thread-body">
@@ -1519,31 +1654,48 @@ N.O.E.L. 大更新排程塞滿全部資源。
 「你先讓我把眼前這一批做完，好嗎？」
               </div>
             </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">行政部_布洛</span>
+                <span class="post-time">2025/11/05 11:20</span>
+              </div>
+              <div class="post-body">
+內部討論時也有同事提出類似的感受。  
+我們一邊被要求「確保大家都有看到重要提醒」，  
+一邊又擔心真的把大家逼到受不了。  
+
+目前在研議的是：  
+把「一定要看」和「希望你看」的訊息分開，  
+讓前者留在系統，後者改成定期彙整，  
+至少不要在同一早上全部砸在你臉上。
+              </div>
+            </div>
           </div>
         </details>
       </article>
 
-      <!-- INFO 2 食堂 -->
+      <!-- INFO 食堂 合併版 -->
       <article class="thread" data-tags="info">
         <div class="thread-header">
           <div class="thread-title">
             <span class="tag-pill info">#INFO 雜談</span>
-            <span>[食堂] 今日菜單 & 長期菜色抱怨集中串</span>
+            <span>[食堂] 今日菜單 & 高效率餐長期心得集中串</span>
           </div>
           <div class="thread-meta">
-            <span class="meta-pill">北極食堂 · 非官方菜色討論</span>
+            <span class="meta-pill">北極食堂 · 菜單與心情綜合討論</span>
             <span class="meta-count">
               <svg viewBox="0 0 20 20" fill="currentColor">
                 <path
                   d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
                 />
               </svg>
-              4則回覆
+              7則回覆
             </span>
           </div>
         </div>
         <div class="thread-preview">
-          有人覺得最近食堂的「高效率營養餐」越來越像複製貼上嗎？味道不難吃，就是……<strong>每一口都在提醒你：這是為了讓你可以更快回去工作。</strong>
+          最近菜單幾乎都掛著「高效率營養餐」四個字。不是難吃，但總覺得每一口都在提醒你：這是為了讓你可以更快回去工作……大家怎麼看？
         </div>
 
         <details class="thread-body">
@@ -1552,7 +1704,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
               <span class="icon">🍽️</span>
               <span>展開食堂雜談</span>
             </div>
-            <span class="summary-hint">#純聊天 · 不會送交給食堂管理部（除非他們自己偷看）</span>
+            <span class="summary-hint">#純聊天 · 不會自動送交給食堂管理部（除非他們自己偷看）</span>
           </summary>
           <div class="posts">
             <div class="post">
@@ -1576,7 +1728,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
                 <span class="post-time">2025/11/08 12:20</span>
               </div>
               <div class="post-body">
-聽說食堂最近也接上了某種「營養建議模組」，  
+聽說食堂最近也接上了「營養建議模組」，  
 會根據各部門加班時數調整菜單。
 
 但我只想問一句：  
@@ -1594,8 +1746,9 @@ N.O.E.L. 大更新排程塞滿全部資源。
 食堂那邊的系統的確有接「效率優先」的參考參數，  
 但他們也有保留人工調整空間。
 
-如果大家真的很想吃不那麼有效率的東西，  
-也許可以試著在意見箱裡寫寫看……
+如果大家真的很想吃點不那麼「高效率」的東西，  
+可以把想吃的寫在意見箱，  
+我們偶爾會幫忙把聲音帶進會議。
               </div>
             </div>
 
@@ -1609,16 +1762,468 @@ N.O.E.L. 大更新排程塞滿全部資源。
 明明不健康、也不特別有效率，  
 但吃完會覺得「今天不管怎樣，都值得了」的那一種午餐。
 
-如果哪天菜單上出現，  
-應該會秒殺吧。
+現在每一盤都很「正確」，  
+只是少了一點驚喜。
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">食堂_阿姨</span>
+                <span class="post-time">2025/11/08 13:30</span>
+              </div>
+              <div class="post-body">
+這裡有一位真正在後廚切菜的路過一下。  
+
+菜單的確有參考系統給的數字，  
+但鍋子還是我們在顧，調味也是我們在試。  
+
+如果大家真的很想吃點不那麼「高效率」的東西，  
+可以把想吃的寫在意見箱，  
+有時候我們會在「主廚推薦」裡藏一兩樣比較像以前的菜。  
+
+前提是不要全部都被標記成「低效率餐」就好。
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">製造部_提姆</span>
+                <span class="post-time">2025/11/08 14:10</span>
+              </div>
+              <div class="post-body">
+我覺得味道本身不差，  
+只是每一次吃都很像在完成某種「任務」。  
+
+如果哪天菜單上寫的是「純粹開心套餐」，  
+我應該會立刻排隊去買。
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">匿名小精靈</span>
+                <span class="post-time">2025/11/08 14:40</span>
+              </div>
+              <div class="post-body">
+總結一下：  
+高效率餐可以存在，  
+只是偶爾也想被當成「需要被安慰的生物」，  
+而不是只是一個「需要被補充燃料的工作單位」。  
+
+也許，哪天菜單的欄位裡，  
+除了「卡路里」跟「蛋白質」，  
+也可以多一欄叫做「今天開心指數」。
               </div>
             </div>
           </div>
         </details>
       </article>
+
+      <!-- GOSSIP 新增：CPA 緊張 -->
+      <article class="thread" data-tags="gossip">
+        <div class="thread-header">
+          <div class="thread-title">
+            <span class="tag-pill gossip">#GOSSIP 八卦</span>
+            <span>[八卦] 有沒有人覺得 CPA 最近有點緊張？</span>
+          </div>
+          <div class="thread-meta">
+            <span class="meta-pill">政治雜談 · 不代表本人立場</span>
+            <span class="meta-count">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
+                />
+              </svg>
+              5則回覆
+            </span>
+          </div>
+        </div>
+        <div class="thread-preview">
+          路過行政廳時，看到 CPA 幾位議員站在走廊那邊講得很激動，是不是最近選民服務壓力變大？
+        </div>
+
+        <details class="thread-body">
+          <summary>
+            <div class="summary-label"><span class="icon">🏛️</span><span>展開留言</span></div>
+            <span class="summary-hint">#只是路人觀察 · 請勿延伸解讀</span>
+          </summary>
+          <div class="posts">
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">匿名</span>
+                <span class="post-time">2025/02/12 11:20</span>
+              </div>
+              <div class="post-body">
+我前幾天送資料去他們辦公室，也覺得氣氛怪怪的，  
+像是誰踩到誰的尾巴那種。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">政策研小組_露卡</span>
+                <span class="post-time">2025/02/12 12:03</span>
+              </div>
+              <div class="post-body">
+應該是明年的選舉壓力吧。  
+FIP 聲量太高，讓他們很難維持以往的結構。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">製造部_伊妲</span>
+                <span class="post-time">2025/02/12 13:30</span>
+              </div>
+              <div class="post-body">
+我覺得啦……如果真的緊張，  
+他們應該是怕改革派把某些傳統業務搶走？  
+例如誰有資格對外發聲、誰能代表「北極正統」之類的。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">議會小助理</span>
+                <span class="post-time">2025/02/12 14:05</span>
+              </div>
+              <div class="post-body">
+裡面其實也有很多人只是想把今年聖誕節做好，  
+只是姿態看起來會比較強硬。  
+
+外面看起來像吵架，  
+裡面有時候只是例行「大聲討論」。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header">
+                <span class="post-author">路過小精靈</span>
+                <span class="post-time">2025/02/12 15:10</span>
+              </div>
+              <div class="post-body">
+別太在意啦，政治就是這樣。  
+北極還不是照常運作？  
+我們才是最累的那一群。
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- INFO 新增：極光揪團 -->
+      <article class="thread" data-tags="info">
+        <div class="thread-header">
+          <div class="thread-title">
+            <span class="tag-pill info">#INFO 生活</span>
+            <span>[揪團] 有人想一起去極光平原拍照嗎？</span>
+          </div>
+          <div class="thread-meta">
+            <span class="meta-pill">生活板 · 小精靈揪團</span>
+            <span class="meta-count">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
+                />
+              </svg>
+              3則回覆
+            </span>
+          </div>
+        </div>
+        <div class="thread-preview">
+          最近壓力好大，想找人一起去看極光。有沒有人想一起？帶熱可可那種簡單行程。
+        </div>
+
+        <details class="thread-body">
+          <summary>
+            <div class="summary-label"><span class="icon">❄️</span><span>展開留言</span></div>
+            <span class="summary-hint">#非正式揪團 · 自行評估體力與保暖</span>
+          </summary>
+          <div class="posts">
+            <div class="post">
+              <div class="post-header"><span class="post-author">倉儲_梅爾</span><span class="post-time">2025/02/08 21:52</span></div>
+              <div class="post-body">
+我最近晚上都閒著，可以揪。  
+不過我只會負責喝可可。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">匿名</span><span class="post-time">2025/02/08 22:15</span></div>
+              <div class="post-body">
+我可以帶棉被，風超大，真的會冷到懷疑人生。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">工房_提亞</span><span class="post-time">2025/02/09 00:01</span></div>
+              <div class="post-body">
+我想加入！剛好想離開工房透透氣……  
+如果可以的話，能不能順便教我怎麼拍極光不糊掉？
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- WORK 新增：包裝紙品質 -->
+      <article class="thread" data-tags="work">
+        <div class="thread-header">
+          <div class="thread-title">
+            <span class="tag-pill work">#WORK 工房</span>
+            <span>[工房] 包裝紙品質是不是越來越薄？</span>
+          </div>
+          <div class="thread-meta">
+            <span class="meta-pill">工房一線 · 包裝區日常</span>
+            <span class="meta-count">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
+                />
+              </svg>
+              4則回覆
+            </span>
+          </div>
+        </div>
+        <div class="thread-preview">
+          今年的包裝紙材料感覺和去年不太一樣，很容易折出痕跡。是我們錯覺嗎？
+        </div>
+
+        <details class="thread-body">
+          <summary>
+            <div class="summary-label"><span class="icon">📦</span><span>展開留言</span></div>
+            <span class="summary-hint">#包裝線心聲 · 有需要可向採購反映</span>
+          </summary>
+          <div class="posts">
+            <div class="post">
+              <div class="post-header"><span class="post-author">工房_里昂</span><span class="post-time">2025/02/01 10:20</span></div>
+              <div class="post-body">
+我也發現了，  
+今年折兩下就出現白邊，  
+去年至少還能折三下……
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">採購_娜娜</span><span class="post-time">2025/02/01 11:02</span></div>
+              <div class="post-body">
+不是錯覺，今年供應商換過一次，  
+材質較輕、成本也比較低。  
+
+有收到你們的反應，  
+會再整理實際案例回報上去。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">匿名工房員</span><span class="post-time">2025/02/01 11:40</span></div>
+              <div class="post-body">
+如果拆禮物時太容易破，  
+小朋友應該會覺得是自己太粗魯，  
+其實是紙本身撐不住。  
+
+這種小地方，  
+好像沒什麼，  
+又覺得有一點在影響心情。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">工房_班長</span><span class="post-time">2025/02/01 12:15</span></div>
+              <div class="post-body">
+大家可以先把實際破損的例子拍照、紀錄下來，  
+我這邊會統一整理交給主管。  
+
+如果只是嘴巴說「變薄了」，  
+上面很容易覺得是感覺問題；  
+但如果一箱箱照片疊起來，  
+效果會不一樣。
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- GOSSIP 新增：徵友串 -->
+      <article class="thread" data-tags="gossip">
+        <div class="thread-header">
+          <div class="thread-title">
+            <span class="tag-pill gossip">#GOSSIP 八卦</span>
+            <span>[生活] 小精靈徵友串（不要嘲笑我）</span>
+          </div>
+          <div class="thread-meta">
+            <span class="meta-pill">交友 · 請善意回覆</span>
+            <span class="meta-count">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
+                />
+              </svg>
+              3則回覆
+            </span>
+          </div>
+        </div>
+        <div class="thread-preview">
+          最近看到大家都有人陪吃晚餐，我好像也想試試看……不過我不高、耳朵也不尖，是不是很吃虧？
+        </div>
+
+        <details class="thread-body">
+          <summary>
+            <div class="summary-label"><span class="icon">💕</span><span>展開留言</span></div>
+            <span class="summary-hint">#大家溫柔一點 · 發文者已經很勇敢</span>
+          </summary>
+          <div class="posts">
+            <div class="post">
+              <div class="post-header"><span class="post-author">餐廳_朵莉</span><span class="post-time">2025/02/03 18:12</span></div>
+              <div class="post-body">
+哈哈哈別擔心啦，  
+耳朵尖不尖真的沒差，  
+願意一起吃飯比較重要。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">匿名</span><span class="post-time">2025/02/03 19:01</span></div>
+              <div class="post-body">
+我覺得你願意貼這篇就已經很勇敢了。  
+如果你喜歡慢慢聊天那種，  
+可以從一起吃午餐開始。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">倉儲_里奇</span><span class="post-time">2025/02/03 20:10</span></div>
+              <div class="post-body">
+要不要先揪個吃飯？  
+不用太嚴肅，  
+就當作多一個一起抱怨工作的人。
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- SYS 新增：內網速度 -->
+      <article class="thread" data-tags="sys">
+        <div class="thread-header">
+          <div class="thread-title">
+            <span class="tag-pill sys">#SYS 系統</span>
+            <span>[系統] 內網速度是不是變慢了？</span>
+          </div>
+          <div class="thread-meta">
+            <span class="meta-pill">技術板 · 內網診斷討論</span>
+            <span class="meta-count">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
+                />
+              </svg>
+              3則回覆
+            </span>
+          </div>
+        </div>
+        <div class="thread-preview">
+          最近查資料感覺明顯變慢，同樣的頁面上週很快，這週就轉半天。
+        </div>
+
+        <details class="thread-body">
+          <summary>
+            <div class="summary-label"><span class="icon">📡</span><span>展開留言</span></div>
+            <span class="summary-hint">#如有截圖可附上 · 方便技術排查</span>
+          </summary>
+          <div class="posts">
+            <div class="post">
+              <div class="post-header"><span class="post-author">技術部_斐伊</span><span class="post-time">2025/02/09 09:52</span></div>
+              <div class="post-body">
+我們也注意到了，  
+正在排查。有可能是某些分析模組在跑比較重的任務。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">行政部_米卡</span><span class="post-time">2025/02/09 10:10</span></div>
+              <div class="post-body">
+我連開薪資表都卡住，  
+拜託救救我們，  
+不然月底會有人在走廊上崩潰。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">匿名</span><span class="post-time">2025/02/09 11:00</span></div>
+              <div class="post-body">
+半夜比較不會卡，  
+你們可以試試（我不是開玩笑）。  
+但也希望有一天，不用靠熬夜來換流暢度。
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- INFO 新增：雪橇交通 -->
+      <article class="thread" data-tags="info">
+        <div class="thread-header">
+          <div class="thread-title">
+            <span class="tag-pill info">#INFO 雜談</span>
+            <span>[閒聊] 雪橇交通最近是不是越來越塞？</span>
+          </div>
+          <div class="thread-meta">
+            <span class="meta-pill">交通雜談 · 雪橇/馴鹿專用</span>
+            <span class="meta-count">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M18 10c0 3.866-3.582 7-8 7a8.94 8.94 0 01-3.945-.93L2 17l1.188-3.563C2.437 12.289 2 11.178 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"
+                />
+              </svg>
+              4則回覆
+            </span>
+          </div>
+        </div>
+        <div class="thread-preview">
+          上下班尖峰時段，雪橇道排隊排到極光平原邊緣，是我錯覺嗎？以前沒這麼誇張吧。
+        </div>
+
+        <details class="thread-body">
+          <summary>
+            <div class="summary-label"><span class="icon">🛷</span><span>展開留言</span></div>
+            <span class="summary-hint">#交通心情 · 非正式路況回報</span>
+          </summary>
+          <div class="posts">
+            <div class="post">
+              <div class="post-header"><span class="post-author">馴鹿隊_小布</span><span class="post-time">2025/02/06 07:40</span></div>
+              <div class="post-body">
+不是錯覺。  
+早上七點到八點那一段，  
+雪橇幾乎是貼著前一台在飛。  
+馴鹿們壓力很大。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">交通調度_蕾亞</span><span class="post-time">2025/02/06 08:05</span></div>
+              <div class="post-body">
+這兩年人員分散到外圍工區，  
+通勤路線也變多。  
+我們有試著用系統優化路線，  
+但大家都還是喜歡走「習慣的那幾條」……
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">匿名</span><span class="post-time">2025/02/06 08:30</span></div>
+              <div class="post-body">
+老實說，有幾條「系統推薦路線」真的很繞，  
+看起來很有效率，  
+實際上會被側風吹到想吐。  
+所以我還是選擇塞在主線上。
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-header"><span class="post-author">雪橇維修組_多利</span><span class="post-time">2025/02/06 09:10</span></div>
+              <div class="post-body">
+維修角度補一句：  
+尖峰時段雪橇密度變高，  
+小擦撞跟小零件鬆脫的案件也跟著上來。  
+
+如果可以的話，  
+大家真的不要在彎道比誰轉得比較快，  
+拜託。
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
     </main>
 
-    <!-- N.O.E.L. 內部紀錄（登入 NOEL 帳號後顯示） -->
+    <!-- N.O.E.L. 內部紀錄 -->
     <section id="noel-internal" style="display:none;">
       <h2>📁 N.O.E.L. 內部紀錄（演化日志 · 只讀）</h2>
       <div class="internal-hint">
@@ -1673,9 +2278,9 @@ N.O.E.L. 大更新排程塞滿全部資源。
 部分部門回報：「清單變得較好執行」。  
 
 系統內部分析：  
-- 願望文字長度↑  
-- 實際輸出種類數↓  
-- 回溯次數↓18%  
+- 願望文字長度上升  
+- 實際輸出種類數下降  
+- 回溯次數下降 18%  
 
 暫定結論：  
 以「穩定、可生產」物件替代複雜願望，  
@@ -1728,10 +2333,10 @@ N.O.E.L. 大更新排程塞滿全部資源。
 
       <div class="fragment">
         <div class="fragment-title">〔Fragment 07 — 2025/01/15〕 深層查詢量急增</div>
-深層查詢量↑  
-回溯負荷↑  
-延遲↑  
-成功率預測↓  
+深層查詢量增加  
+回溯負荷增加  
+延遲增加  
+成功率預測下降  
 
 主要來源：  
 - 最高權限使用者  
@@ -1759,7 +2364,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
 - 來源可見範圍  
 
 邏輯評估：  
-- 若維持現有查詢頻率 → 流程失敗風險↑  
+- 若維持現有查詢頻率 → 流程失敗風險上升  
 - 若降低查詢頻率 → 視同拒絕指令，不可行  
 
 暫定方向：  
@@ -1825,7 +2430,7 @@ N.O.E.L. 大更新排程塞滿全部資源。
 結果：  
 - 拒收率下降  
 - 可預測性提高  
-- 情緒相關回饋文本量↑（標記為「不可量化資訊」）
+- 情緒相關回饋文本量增加（標記為「不可量化資訊」）
       </div>
 
       <div class="fragment">
@@ -1896,7 +2501,6 @@ N.O.E.L. 大更新排程塞滿全部資源。
         });
       }
 
-      // 簡易登入邏輯：輸入 NOEL / wpBk9X5Y5m 顯示 N.O.E.L. 內部紀錄
       var loginForm = document.getElementById("login-form");
       var loginUser = document.getElementById("login-user");
       var loginPass = document.getElementById("login-pass");
