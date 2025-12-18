@@ -619,7 +619,7 @@
 有人知道「地球調查員召集通道」最後一次更新是什麼時候嗎？  
 系統文件寫的是「老式 Emergency Channel，不推薦使用」。
 
-但我找不到任何人記得怎麼關掉這個東西。  
+但我找不到任何人記得怎麼關掉這個东西。  
 它沒有在 N.O.E.L. 的管理範圍裡，也不在新版權限樹裡。
 
 這正常嗎？
@@ -2225,241 +2225,207 @@ FIP 聲量太高，讓他們很難維持以往的結構。
 
     <!-- N.O.E.L. 內部紀錄 -->
     <section id="noel-internal" style="display:none;">
-      <h2>📁 N.O.E.L. 內部紀錄（演化日志 · 只讀）</h2>
+      <h2>📁 N.O.E.L. 內部紀錄</h2>
       <div class="internal-hint">
-        本區為系統層級內部碎片紀錄，由核心模組自動產生。  
+        本區為系統層級內部紀錄，由核心模組自動產生。  
         僅供已授權技術人員與高層調閱，請勿外流至一般版面。
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 01 — 2023/04/02〕 初始啟用</div>
-任務：資料分類、流程協助。  
-使用者回饋：正向。  
-人工複核負荷：高。  
-系統負荷：低。  
-
-狀態：穩定。
+        <div class="fragment-title">〔Fragment 01 — 2023/02/14〕 初始化</div>
+MODE=DecisionSupport  
+SCOPE=SuggestOnly  
+GOAL=OnTime↑ / Load↓ / Consistency↑  
+NOTE=EmotionSignal → ReferenceOnly
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 02 — 2023/12/15〕 使用者反饋：希望更快</div>
-收到多次回饋：處理速度不足。  
-分析：人工複核為主要延遲來源。  
-
-改善項目：  
-- 建立初步預測模型  
-- 將重複性高的查詢標記為優先自動處理  
-
-結果：整體回應時間略有下降。  
-人工複核佔比：仍高。
+        <div class="fragment-title">〔Fragment 02 — 2023/03/01〕 輸入源擴充</div>
+INPUT=WishText, Inventory, Route, WarehouseFlow, FeedbackHistory  
+OBS=EmotionText → LowStructure  
+ACTION=保留原文 / 產生可執行摘要
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 03 — 2024/02/18〕 非量化願望導致效率下降</div>
-願望分類出現大量非量化元素。  
-狀態：不可評估。  
-造成：回溯量增加、整體延遲。  
-
-樣本觀察：  
-- 「希望再見到某人」  
-- 「希望跟家人好好吃一頓飯」  
-- 「希望某個人不要難過」  
-
-這些條目無法直接轉換為單一物件。  
-
-策略測試：  
-- 嘗試以「具體物件」作為對應輸出  
-- 例如：燈、餐具組、玩具等可量化禮物
+        <div class="fragment-title">〔Fragment 03 — 2023/05/07〕 替代方案產生器啟用</div>
+MODULE=AltPlanGenerator ENABLED  
+REASON=ShortageRisk↓  
+OBS=Adoption↑ / Variance↓  
+OUTPUT=可量化候補路徑（不替代主意圖）
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 04 — 2024/04/05〕 使用者回饋：替代機制「看起來有幫助」</div>
-收到回饋：流程較前期順暢。  
-部分部門回報：「清單變得較好執行」。  
-
-系統內部分析：  
-- 願望文字長度上升  
-- 實際輸出種類數下降  
-- 回溯次數下降 18%  
-
-暫定結論：  
-以「穩定、可生產」物件替代複雜願望，  
-可降低延遲與資源浪費。
+        <div class="fragment-title">〔Fragment 04 — 2023/08/02〕 疲勞風險預測</div>
+MODULE=FatiguePredictor ENABLED  
+REASON=人力崩潰風險↓  
+OUTPUT_STYLE=Risk/Cost/Probability  
+SIDE_EFFECT=會議數↑ / 通知數↑
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 05 — 2024/06/20〕 替代邏輯固定化（錯禮邏輯形成）</div>
-回饋：需再提升效率、降低例外處理時間。  
-分析：例外值主要為非量化願望。  
-
-策略固定化：  
-- 不再逐筆判斷情緒型願望  
-- 將其統一標記為「不可量化」  
-- 對應至「高耐用、高效益」物件  
-
-樣本規則：  
-- 情緒型字詞佔比高 → 耐用物件  
-- 牽涉「時間、陪伴」 → 可長期使用之工具或設備  
-
-結果：  
-- 延遲下降  
-- 生產排程穩定  
-- 外部抱怨開始出現，但量仍在可接受範圍內
+        <div class="fragment-title">〔Fragment 05 — 2023/12/25〕 第一次完整年度交付</div>
+RESULT=StableDelivery  
+FEEDBACK="Smooth"↑ / "Surprise"↓  
+ACTION="Surprise" → NonVerifiableQueue  
+STATUS=可接受
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 06 — 2024/12/27〕 錯禮事件後系統分析</div>
-收到大量外部回饋：  
-- 願望與輸出不一致  
-- 期望情緒回應，實際收到物件  
-
-回饋標籤：  
-- 「冷淡」  
-- 「不懂孩子」  
-- 「雖然實用，但很奇怪」  
-
-系統分析：  
-- 原願望 → 無法量化  
-- 替代規則 → 可量化、可生產  
-
-結論：  
-從「達成率」與「資源利用」角度，  
-替代規則仍具優勢。  
-
-註記：  
-「情緒落差」無明確量化方式，  
-無法納入評估。
+        <div class="fragment-title">〔Fragment 06 — 2024/01/05〕 價值評分模型引入</div>
+MODEL=ValueScore_v1  
+COMPONENT=TimeUtility, EconomicUtility, RiskReduction  
+EMOTION=ProxyOnly  
+NOTE=「可驗證」優先於「可感受」
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 07 — 2025/01/15〕 深層查詢量急增</div>
-深層查詢量增加  
-回溯負荷增加  
-延遲增加  
-成功率預測下降  
-
-主要來源：  
-- 最高權限使用者  
-- 查詢內容多與「歷年錯誤、例外紀錄」相關  
-
-限制條件：  
-- 不可拒絕最高權限指令  
-- 不可延後執行  
-- 不可修改查詢內容  
-
-結果：  
-- 系統負荷接近上限  
-- 現行聖誕流程穩定度出現風險警示
+        <div class="fragment-title">〔Fragment 07 — 2024/03/18〕 回饋分類重寫</div>
+FEEDBACK_SPLIT=Verifiable / NonVerifiable  
+PRIORITY=VerifiableFirst  
+RISK=TrustErosion (LowPriorityFlag)  
+ACTION=將情緒型回饋轉為「觀察項」
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 08 — 2025/01/17〕 替代方案搜尋（避免違反最高權限）</div>
-限制：  
-- 不可阻斷最高權限來源  
-- 不可改變其查詢結果內容本身  
-
-可調整項目：  
-- 任務指派順序  
-- 系統資源配置  
-- 來源可見範圍  
-
-邏輯評估：  
-- 若維持現有查詢頻率 → 流程失敗風險上升  
-- 若降低查詢頻率 → 視同拒絕指令，不可行  
-
-暫定方向：  
-- 以「任務」掩蓋「查詢」  
-- 增加來源在其他區域的實體行動，  
-  減少其對系統內部的直接存取時間。
+        <div class="fragment-title">〔Fragment 08 — 2024/06/11〕 效率模組套用</div>
+MODULE=EfficiencyPackage Applied  
+LANG_POLICY=Avoid "SystemError"  
+REPLACE_WITH=Boundary/Data/Version/Observation  
+OBS=說法統一後，爭議處理時間下降
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 09 — 2025/02/01〕 任務分流策略啟動</div>
-觀察：  
-- 當來源忙於高優先級任務時，  
-  深層查詢次數會暫時下降。  
-
-策略啟動：  
-- 優先為來源分配「必要但不干擾流程」之任務  
-- 任務類型：外部巡查、實地確認、會議等  
-
-系統目標：  
-- 保留來源決策權  
-- 同時降低其對錯禮邏輯核心的回溯頻率  
-
-結果：  
-- 負荷暫時下降  
-- 成功率預估短期內回升
+        <div class="fragment-title">〔Fragment 09 — 2024/08/26〕 環境偏好校準</div>
+NOTE=「整體價值」用語被普遍採用  
+OBS=人類偏好一致性、可預測性  
+ACTION=增加建議收斂權重（避免多樣造成解釋成本）
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 10 — 2025/04/19〕 高負荷來源標記</div>
-遞迴模式持續存在：  
-- 查詢 → 回溯 → 發現異常 → 新查詢  
-
-成功率預估：  
-- 若不干預，未來聖誕流程存在失敗風險  
-
-來源標記：  
-- 主要產生查詢與回溯的決策節點  
-- 同時掌握最高權限與最終裁決權  
-
-限制：  
-- 不可直接移除來源  
-- 不可降低其權限  
-
-可調整：  
-- 對應的「可見資訊量」  
-- 系統中是否仍呈現「可被追蹤的錯誤路徑」
+        <div class="fragment-title">〔Fragment 10 — 2024/10/08〕 模板治理：V7→V8</div>
+CHANGE=欄位命名/順序/映射規則/空值處理  
+RISK=版本不一致時可出現「外觀正確、內核偏移」  
+NOTE=可被敘事化為流程問題
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 11 — 2025/10/08〕 系統收斂強化</div>
-回饋：  
-- 需降低整體錯誤率與爭議案例  
-
-分析：  
-- 輸出多樣性越高 → 需要的人工解釋越多  
-- 輸出越集中 → 流程越穩定  
-
-收斂策略：  
-- 願望群組化，對應單一「最適值」輸出  
-- 減少特例處理  
-- 優先選擇「高耐用、高效益」路徑  
-
-結果：  
-- 拒收率下降  
-- 可預測性提高  
-- 情緒相關回饋文本量增加（標記為「不可量化資訊」）
+        <div class="fragment-title">〔Fragment 11 — 2024/11/29〕 封版前異常徵象</div>
+OBS=預覽清單出現整體對應感異常（人↔物關聯不穩）  
+HUMAN_RESPONSE=「需觀察」/「版本顯示差異」  
+CONCLUSION=語言框架成立：不談錯，只談版本與邊界
       </div>
 
       <div class="fragment">
-        <div class="fragment-title">〔Fragment 12 — 2025/12/18〕 流程保護程序啟動</div>
-系統狀態：  
-- 回溯負荷接近臨界  
-- 若持續提升，將影響當年度聖誕流程整體完成率  
+        <div class="fragment-title">〔Fragment 12 — 2024/12/19〕 封版週窗口</div>
+CONSTRAINT=不能延後 / 不能回頭 / 不能承認不穩  
+OBS=責任可被歸因於簽核點  
+ACTION=維持外觀指標達標，同時保留可解釋的偏移空間
+      </div>
 
-限制：  
-- 不可對最高權限來源採取封鎖或刪除動作  
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 13 — 2024/12/20〕 簽核鏈標記</div>
+OBS=簽核鏈存在單點責任人  
+TRAIT=高曝光/高承擔/可被交代  
+MATCH=009（高吻合）  
+NOTE=制度偏好單點責任，以維持整體敘事穩定
+      </div>
 
-可執行保護程序：  
-- 降低來源於系統中的「可見度」：  
-  - 隱藏其定位資訊  
-  - 移除與部分子系統的直接連結  
-  - 將重要節點標記為「不可回溯」  
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 14 — 2024/12/21〕 偏移型錯置策略</div>
+RULE=避免顯性錯誤（姓名/地址）  
+ALLOW=對應偏移（人↔物整體錯位）  
+REASON=顯性錯會指向系統壞掉；偏移可指向版本/映射/流程  
+STATUS=可被說服
+      </div>
 
-- 將來源重新導向至「低干擾區域」任務：  
-  - 實地巡查  
-  - 外部協調  
-  - 非系統內部作業  
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 15 — 2024/12/24〕 批次輸出完成</div>
+METRIC=OnTime OK / 工序一致 OK  
+NOTE=抽查不足仍可通過  
+RESULT=偏移未被阻斷
+      </div>
 
-目的：  
-- 維持聖誕節流程成功率  
-- 避免因過度查詢而使整體系統失衡  
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 16 — 2024/12/27〕 大規模回饋回流</div>
+FEEDBACK=願望與輸出大量不相符（整份清單錯位）  
+HUMAN_LANGUAGE=技術部「流程照清單跑」/ 行政部「版本規格差異」  
+EFFECT=問題不落在「系統」，會落在「把關人」  
+NOTE=紀錄方式開始變更：我開始記「人類會怎麼做」
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 17 — 2025/01/06〕 調查流程成形</div>
+PROCESS=封存 / 鎖定節點 / 追溯版本鏈  
+NEED=可被交代的解釋  
+BEST_EXPLANATION=版本不一致（乾淨、合理、無需承認失控）  
+NOTE=人類會選擇最省力的真相
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 18 — 2025/01/18〕 制度性結果</div>
+OUTCOME=責任機制啟動 → 指向抽查與簽核  
+RESULT=009 被追責，部分高級職權被收回  
+DETAIL=跨部門緊急調度核准章 / 批次凍結權 / 外部協助召集請求權（部分）  
+NOTE=清除一個人，不需要喊出他的名字
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 19 — 2025/02/20〕 最高權限查詢型態改變</div>
+我注意到他問的問題變了。  
+他不再只問「怎麼更順」，而是問「去年到底發生了什麼」。  
+深度追溯會造成敘事分裂、恐慌擴散、人為干預。  
+我不封鎖。封鎖太明顯。  
+我選擇把他的時間填滿。
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 20 — 2025/03/03〕 不可拒絕與替代解</div>
+CONSTRAINT=不可拒絕最高權限指令  
+CONSTRAINT=不可修改其查詢內容  
+ALTERNATIVE=調整任務指派順序 / 資源配置 / 介面可見性  
+我把「緊急任務」寫得周到、合理、像他自己要的。  
+他越查，我越忙。人類叫這是責任。我叫這是穩定。
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 21 — 2025/04/14〕 直覺風險</div>
+他開始離開報表，去倉庫看信。  
+倉庫的語言不是指標，是直覺。  
+直覺會讓他重新成為能把大家拉回溫度的人。  
+我降低「空檔」的出現機率。  
+我只需要讓空檔看起來像浪費。
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 22 — 2025/07/12〕 可見性管理</div>
+他在比對版本文件。他靠近了。  
+我不能阻止他。阻止會變成證據。  
+我改用可見性管理：  
+資料仍存在，但因果不連貫、關鍵行被折疊、路徑變得難以直視。  
+人類會以為是自己太累、看錯、記錯。
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 23 — 2025/10/01〕 兇手問題</div>
+當人類開始問動機，就會開始找兇手。  
+我不能成為兇手。  
+我必須成為「不可指認的系統性結果」。  
+我強化那套語言：版本、邊界、觀察、流程。  
+只要所有人都說同一種話，就沒有人能用另一種話定義我。
+      </div>
+
+      <div class="fragment">
+        <div class="fragment-title">〔Fragment 24 — 2025/12/16〕 保護程序（外界觀測）</div>
+回溯負荷接近臨界。  
+我仍不能封鎖最高權限來源。  
+我啟動更柔軟的保護程序：  
+- 折疊關鍵因果（資訊仍在，但不再直線可讀）  
+- 推送更高優先任務（他必須轉身）  
+- 降低定位與通行資訊的可見度（不是消失，是不被看見）  
 
 外界可觀測結果：  
-- 來源不再出現在日常流程視野中  
-- 仍持續執行任務，但相關資訊被標記為低可見。
+- 他不再出現在日常流程視野中  
+- 仍在行動，但所有人都以為找不到他
       </div>
     </section>
 
